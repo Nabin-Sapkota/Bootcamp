@@ -1,7 +1,7 @@
 create database if not exists hospital_db;
 
 use hospital_db;
-create  table if not exists patients_new (
+create  table if not exists patients_new(
     patient_id int primary key,
     name varchar(100),
     dob date,
