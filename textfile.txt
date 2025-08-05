@@ -1,0 +1,3619 @@
+
+
+
+Course Content
+
+
+
+
+
+
+                                                     Module 1 - SQL  
+                                                     
+
+
+
+
+
+â Class - 1
+
+
+
+ What is Database?
+
+
+
+
+
+
+ Difference between Transactional Databases and NoSQL databases
+
+
+
+
+
+
+ What is DBMS & RDBMS?
+
+
+
+
+
+
+ Transactions & ACID Properties
+
+
+
+
+
+
+ Setup MySQL Workbench
+
+
+
+
+
+
+ DDL, DML, DQL, DCL
+
+
+
+
+
+
+ CREATE Command
+
+
+
+
+
+
+ INSERT Command
+
+
+
+
+
+
+ Integrity Constraints
+
+
+
+
+
+â Class - 2
+
+
+
+ Alter Command
+
+
+
+
+
+
+ Drop, Truncate and Delete
+
+
+
+
+
+
+ Primary Key vs Foreign Key
+
+
+
+
+
+
+ Referential Integrity
+
+
+
+
+
+
+ Select Query, In-Built Functions, Aliases
+
+
+
+
+
+
+ UPDATE Command
+
+
+
+
+
+
+ Auto Increment in create table
+
+
+
+
+
+
+ Limit
+
+
+
+
+
+
+ Order By Clause
+
+
+
+
+
+
+ Conditional Operators
+
+
+
+
+
+
+ Logical Operators
+
+
+
+
+
+
+ Like Operation
+
+
+
+
+
+
+ User Defined Functions (UDFs)
+
+
+
+
+
+
+â Class - 3
+
+
+
+ IS NULL, IS NOT NULL
+
+
+
+
+
+
+ Group By, Having Clause
+
+
+
+
+
+
+ Group Concat, Group RollUP
+
+
+
+
+
+
+ Sub Queries, IN and NOT IN
+
+
+
+
+
+
+ CASE-When
+
+
+
+
+
+
+ SQL Joins
+
+
+
+
+
+
+â Class - 4
+
+
+
+ Exists and Not Exists
+
+
+
+
+
+
+ Window Functions
+
+
+
+
+
+
+ Frame Clause
+
+
+
+
+
+
+ Coalesce Function
+
+
+
+
+
+
+ Common Table Expressions - Iterative and Recursive
+
+
+
+
+
+
+
+
+
+
+                                                    Module 2 - BigData Fundamentals, Hadoop & Hive
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ BigData Fundamentals
+
+
+
+
+
+
+ 5 Vâs of BigData
+
+
+
+
+
+
+ Distributed Computation
+
+
+
+
+
+
+ Distributed Storage
+
+
+
+
+
+
+ Cluster, Commodity Hardware
+
+
+
+
+
+
+ File Formats
+
+
+
+
+
+
+ Types of Data
+
+
+
+
+
+
+ History of Hadoop
+
+
+
+
+
+
+ Hadoop Architecture & Components
+
+
+
+
+
+â Class - 2  (Theory Part Recorded)
+
+
+
+ Map-Reduce Architecture
+
+
+
+
+
+
+ YARN Architecture
+
+
+
+
+
+â Class - 3  (Theory Part Recorded)
+
+
+
+ Hive Complete Architecture
+
+
+
+
+
+
+ Hadoop Cluster Setup on GCP (Dataproc)
+
+
+
+
+
+â Class - 4 
+
+
+
+ Data Types in Hive
+
+
+
+
+
+
+ Create Database
+
+
+
+
+
+
+ Create Table
+
+
+
+
+
+
+ Load Data From Local
+
+
+
+
+
+
+ Load Data From HDFS
+
+
+
+
+
+
+ Internal Table
+
+
+
+
+
+
+ External Table
+
+
+
+
+
+
+ Array & Map Data Types
+
+
+
+
+
+
+ SerDe in Hive
+
+
+
+
+
+
+ File Formats in Hive - ORC, Parquet, Avro
+
+
+
+
+
+â Class - 5 
+
+
+
+ CSV SerDe
+
+
+
+
+
+
+ JSON SerDe
+
+
+
+
+
+
+ Parquet SerDe
+
+
+
+
+
+
+ ORC SerDe
+
+
+
+
+
+
+ Static Partitioning
+
+
+
+
+
+
+ Dynamic Partitioning
+
+
+
+
+
+
+ Bucketing
+
+
+
+
+
+
+ Map-Side Join, Bucket Map Join, Sorted Merge Join, Skew Join
+
+
+
+
+
+
+
+
+
+
+                                                    Module 3 - Confluent Kafka
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ Kafka Cluster Architecture
+
+
+
+
+
+
+ Brokers
+
+
+
+
+
+
+ Topics
+
+
+
+
+
+
+ Partitions
+
+
+
+
+
+
+ Producer-Consumer, Consumer Group
+
+
+
+
+
+
+ Offset Management
+
+
+
+
+
+
+ Replicas
+
+
+
+
+
+
+ Commits
+
+
+
+
+
+
+ Sync & Async Commits
+
+
+
+
+
+â Class - 2
+
+
+
+ Confluent Kafka Setup
+
+
+
+
+
+
+ Topic Creation
+
+
+
+
+
+
+ Schema Registry
+
+
+
+
+
+
+ Key, Value Message
+
+
+
+
+
+
+ Message in Kafka Topics based on Random and Constant Keys
+
+
+
+
+
+
+ Kafka Producer Code with Serialisation
+
+
+
+
+
+
+ Kafka Consumer Code with De-Serialization
+
+
+
+
+
+
+ Consumer Groups
+
+
+
+
+
+
+ Working with JSON, CSV Data
+
+
+
+
+
+
+ GCP Pub-Sub Setup
+
+
+
+
+
+
+ Producer & Consumer for GCP Pub-Sub Setup
+
+
+
+
+
+
+
+
+
+
+                                                   Module 4 - NoSQL DataBase: MongoDB & Cassandra
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ CAP Theorem
+
+
+
+
+
+
+ What is MongoDB and MongoDB Atlas?
+
+
+
+
+
+
+ MongoDB vs Relational Database
+
+
+
+
+
+
+ MongoDB features
+
+
+
+
+
+
+ MongoDB use cases and applications
+
+
+
+
+
+
+ MongoDB architecture
+
+
+
+
+
+
+ Node
+
+
+
+
+
+
+ Data Centre
+
+
+
+
+
+
+ Cluster
+
+
+
+
+
+
+ Data replication
+
+
+
+
+
+
+ Write operation
+
+
+
+
+
+
+ Read operation
+
+
+
+
+
+
+ Indexing
+
+
+
+
+
+â Class - 2
+
+
+
+ MongoDB Atlas Setup
+
+
+
+
+
+
+ MongoDB Cluster Creation
+
+
+
+
+
+
+ MongoDB Compass Setup
+
+
+
+
+
+
+ Database & Collection in MongoDB
+
+
+
+
+
+
+ Connect with MongoDB Cluster from MongoDB Compass
+
+
+
+
+
+
+ Import JSON data in MongoDB Collection
+
+
+
+
+
+
+ Queries on MongoDB Collection from Python Application
+
+
+
+
+
+
+ KSQLdb in Confluent Kafka
+
+
+
+
+
+
+ Streams in KSQLdb
+
+
+
+
+
+
+ Tables in KSQLdb
+
+
+
+
+
+
+ Persistent Queries in KSQLdb
+
+
+
+
+
+
+ JOIN queries on streams in KSQLdb
+
+
+
+
+
+
+ McDonald's Payments Stream data ingestion from Kafka to MongoDB
+
+
+
+
+
+
+ Setup Orders & Payments Streams using KSQLdb
+
+
+
+
+
+
+ Setup windowed JOIN streams using KSQLdb
+
+
+
+
+
+
+ Setup MongoDB Sink Connector
+
+
+
+
+
+â Class - 3  (Recorded)
+
+
+
+ CAP Theorem
+
+
+
+
+
+
+ What is Apache Cassandra?
+
+
+
+
+
+
+ Cassandra Database vs Relational Database
+
+
+
+
+
+
+ Apache Cassandra features
+
+
+
+
+
+
+ Cassandra use cases and applications
+
+
+
+
+
+
+ Cassandra architecture
+
+
+
+
+
+
+ Node
+
+
+
+
+
+
+ Data Centre
+
+
+
+
+
+
+ Cluster
+
+
+
+
+
+
+ Commit log
+
+
+
+
+
+
+ Mem-table
+
+
+
+
+
+
+ SSTable
+
+
+
+
+
+
+ Data replication
+
+
+
+
+
+
+ Read operation
+
+
+
+
+
+â Class - 4  (Recorded)
+
+
+
+ Data Partitioning and Token
+
+
+
+
+
+
+ VNodes in Cassandra
+
+
+
+
+
+
+ Read Operation in Cassandra
+
+
+
+
+
+
+ Compaction in Cassandra
+
+
+
+
+
+
+ Gossip Protocol in Cassandra
+
+
+
+
+
+
+ Write consistency in Cassandra
+
+
+
+
+
+
+ Read consistency in Cassandra
+
+
+
+
+
+
+ Partition Key, Cluster Key, Row Key Declaration
+
+
+
+
+
+
+ Cassandra Setup Using Docker
+
+
+
+
+
+
+ CQL in Cassandra
+
+
+
+
+
+
+ Cassandra Free Tier Setup On DataStax
+
+
+
+
+
+
+ Queries in Cassandra using Python
+
+
+
+
+
+
+
+
+
+
+                                                  Module 5 - Apache Spark (PySpark)
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ Problems with Hadoop Map-Reduce
+
+
+
+
+
+
+ What is Apache Spark?
+
+
+
+
+
+
+ Features of Spark
+
+
+
+
+
+
+ Spark ecosystem
+
+
+
+
+
+
+ RDD in Spark
+
+
+
+
+
+
+ Properties of RDD
+
+
+
+
+
+
+ How Spark perform data partitioning?
+
+
+
+
+
+
+ Transformation in Spark
+
+
+
+
+
+
+ Narrow Transformation vs Wide Transformation
+
+
+
+
+
+
+ Action in Spark
+
+
+
+
+
+
+ Read & Write operation in Spark are transformation or action?
+
+
+
+
+
+
+ Lazy evaluation in Spark
+
+
+
+
+
+
+ Lineage graph or DAG in Spark
+
+
+
+
+
+
+ How DAG looks on Spark Web UI?
+
+
+
+
+
+
+ Job, Stage and Task in Spark
+
+
+
+
+
+
+ What if Spark cluster capacity is less than the size of data to be processed?
+
+
+
+
+
+
+ Spark in-depth architecture and it's components
+
+
+
+
+
+
+ Spark with Standalone Cluster Manager Type
+
+
+
+
+
+
+ Spark with YARN Cluster Manager Type
+
+
+
+
+
+
+ Deployment modes of Spark Application
+
+
+
+
+
+
+ How DAG looks on Spark Web UI?
+
+
+
+
+
+
+ Internals of Spark Job over the cluster
+
+
+
+
+
+â Class - 2  (Theory Part Recorded)
+
+
+
+ Persist and Caching in Spark
+
+
+
+
+
+
+ Storage Levels in Persist
+
+
+
+
+
+
+ How does data skewness occur in Spark?
+
+
+
+
+
+
+ Techniques to deal with data skewness
+
+
+
+
+
+
+ Repartition vs Coalesce
+
+
+
+
+
+
+ Example of Key Salting technique
+
+
+
+
+
+
+ RDD vs Dataframe vs Dataset
+
+
+
+
+
+
+ How to use Spark-Submit utility?
+
+
+
+
+
+
+ Memory management in Spark
+
+
+
+
+
+
+ Memory components in Executor Container
+
+
+
+
+
+
+ Dynamic occupancy mechanism
+
+
+
+
+
+
+ How to process 1 TB of data in Spark?
+
+
+
+
+
+
+ Resource allocation case study - 1 : 6 Nodes and each node have 16 cores & 64 GB RAM
+
+
+
+
+
+
+ Resource allocation case study - 2 : 6 Nodes and each node have 32 cores & 64 GB RAM
+
+
+
+
+
+
+ Resource allocation case study - 3 : When more memory isn't required for the executors
+
+
+
+
+
+
+ Broadcast and Accumulators in Spark
+
+
+
+
+
+
+ Different type of failures in Spark and how to resolve them
+
+
+
+
+
+
+ Out Of Memory failures
+
+
+
+
+
+
+ Code and Resource level optimizations in Spark
+
+
+
+
+
+
+ Best practices to design Spark Applications
+
+
+
+
+
+
+â Class - 3
+
+
+
+ Spark Cluster Setup On GCP Dataproc
+
+
+
+
+
+
+ Spark Session creation
+
+
+
+
+
+
+ Create dataframe with custom schema
+
+
+
+
+
+
+ Read csv data from HDFS
+
+
+
+
+
+
+ Partitions and Partition size in Spark job
+
+
+
+
+
+
+ Select operation
+
+
+
+
+
+
+ withColumn operation
+
+
+
+
+
+
+ withColumnRenamed operation
+
+
+
+
+
+
+ Filter operation
+
+
+
+
+
+
+ Drop column operation
+
+
+
+
+
+
+ Drop Duplicates operation
+
+
+
+
+
+
+ Order By operation
+
+
+
+
+
+
+ Group By operation
+
+
+
+
+
+
+ Accumlator
+
+
+
+
+
+
+ Case-When operation
+
+
+
+
+
+
+ Window functions
+
+
+
+
+
+
+ Join & Broadcast join operation
+
+
+
+
+
+
+ Spark SQL, Register dataframe as table
+
+
+
+
+
+
+ Write CSV data in HDFS without partition key
+
+
+
+
+
+
+ Write Parquet data in HDFS
+
+
+
+
+
+
+ Write CSV data in HDFS with partition key
+
+
+
+
+
+
+ Write CSV data in HDFS with Coalesce
+
+
+
+
+
+
+ Read JSON Data in Spark and explode columns
+
+
+
+
+
+â Class - 4
+
+
+
+ Execution of Spark application using Spark-Submit Utility
+
+
+
+
+
+
+ Monitor, Debug & Understand Spark Dag on Spark Web UI - Practical Example
+
+
+
+
+
+
+ What is Stream Processing?
+
+
+
+
+
+
+ Spark structured streaming
+
+
+
+
+
+
+ Spark streaming with word count example
+
+
+
+
+
+
+ Output modes in writeStream in Spark structured streaming
+
+
+
+
+
+
+ What if memory due to state management is full?
+
+
+
+
+
+
+ DStream vs Spark Structured Streaming
+
+
+
+
+
+
+ Spark structured streaming with File as source
+
+
+
+
+
+
+ Triggers in Spark structured streaming
+
+
+
+
+
+
+â Class - 5
+
+
+
+ Checkpointing
+
+
+
+
+
+
+ Exactly once in spark structured streaming
+
+
+
+
+
+
+ Stateless and Stateful Processing
+
+
+
+
+
+
+ Global aggregation and Windowed aggregation
+
+
+
+
+
+
+ Windowing
+
+
+
+
+
+
+ Sliding window
+
+
+
+
+
+
+ Tumbling window vs Sliding window
+
+
+
+
+
+
+ When and why we should use windowing?
+
+
+
+
+
+
+ Windowed aggregations example
+
+
+
+
+
+
+ Arbitrary stateful transformations
+
+
+
+
+
+
+ Watermarking
+
+
+
+
+
+
+ Working example of handling delayed events using watermarking
+
+
+
+
+
+
+ Code implementation for Stateless spark structured streaming with source as Confluent Kafka Topic
+
+
+
+
+
+
+ Code implementation for Stateful spark structured streaming with source as Confluent Kafka Topic - Global aggregation and Windowed aggregation
+
+
+
+
+
+
+ Spark structure streaming pipeline implementation where Source is Confluent Kafka Topic and Destination is MongoDB
+
+
+
+
+
+
+
+
+
+
+                                                   Module 6 - Apache Airflow
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ What is orchestration in BigData?
+
+
+
+
+
+
+ Need of dependency management in Data Pipeline design
+
+
+
+
+
+
+ What is Airflow?
+
+
+
+
+
+
+ Architecture & Different Components of Airflow
+
+
+
+
+
+
+ Operators in Airflow
+
+
+
+
+
+
+ How to write Airflow DAG Scripts?
+
+
+
+
+
+
+ Attribute description
+
+
+
+
+
+
+ How to execute parallel tasks?
+
+
+
+
+
+â Class - 2
+
+
+
+ Setup Airflow on GCP using Composer
+
+
+
+
+
+
+ Create and schedule Airflow Dag with sequential tasks using BashOperator and PythonOperator
+
+
+
+
+
+
+ Create and schedule Airflow dag with parallel tasks using BashOperator and PythonOperator
+
+
+
+
+
+
+ Airflow Exercise - 1 : End-To-End Airflow Dag to Create Dataproc Cluster, Run PySpark Job on cluster and Delete GCP Dataproc cluster
+
+
+
+
+
+
+ Airflow Exercise - 2 : Airflow Dag to support data backfilling via parameterized date inputs and use if Variables in Airflow
+
+
+
+
+
+
+ Project 1 - Flight Booking Data Pipeline with Airflow & CICD (Industrial Project)
+
+
+Tech Stack - GitHub, GitHub Actions, Google Storage, PySpark, Dataproc Serverless, Airflow, BigQuery
+
+
+
+
+
+
+
+
+
+
+                                                   Module 7 - Databricks
+                                                
+
+
+
+
+â Class - 1
+
+
+
+ What is Databricks?
+
+
+
+
+
+
+ Unity Catalog
+
+
+
+
+
+
+ Delta Lake & Delta Tables
+
+
+
+
+
+
+ Databricks Account Setup on GCP
+
+
+
+
+
+
+ Workspace Setup
+
+
+
+
+
+
+ Metastore Setup
+
+
+
+
+
+
+ Managed & External Catalog Setup
+
+
+
+
+
+
+ Volumes In Databricks
+
+
+
+
+
+
+ Databricks Cluster Setup
+
+
+
+
+
+
+ PySpark Notebook Setup
+
+
+
+
+
+
+ Read/Write from Databricks Volume in PySpark Notebook
+
+
+
+
+
+
+  Create Delta table and Write data in PySpark using DeltaTable Python API
+
+
+
+
+
+
+  Write partitioned data in Delta table
+
+
+
+
+
+
+  Read from Delta table in PySpark
+
+
+
+
+
+
+ Time travel in Delta table (Read from specific version or timestamp)
+
+
+
+
+
+â Class - 2
+
+
+
+ Project 1 - Order Tracking Event Driven Data Ingestion (Industrial Project)
+
+
+Tech Stack: Google Storage, PySpark, Databricks, Delta Lake, Databricks Workflows, GitHub
+
+
+
+
+
+
+ Project 2 - UPI Transactions Real Time CDC Feed Processing (Industrial Project)
+
+
+Tech Stack - Databricks, Spark Structured Streaming, Delta Lake
+
+
+
+
+
+
+ Project 3 - Travel Bookings Data Ingestion Pipeline With SCD2 Merge(Industrial Project)
+
+
+Tech Stack - Databricks, PySpark, Google Storage, Delta Lake, Databricks Workflows, PyDeequ
+
+
+
+
+
+
+ What is DLT in Databricks?
+
+
+
+
+
+
+ How to create materialized views & streaming tables with DLT pipeline?
+
+
+
+
+
+
+ How to setup DLT pipeline job?
+
+
+
+
+
+
+ Validation & Execution of DLT pipeline with lineage
+
+
+
+
+
+
+ Checkpointing in DLT pipeline
+
+
+
+
+
+
+ Project 4 - Healthcare Delta Live Table Pipeline with Medallion Architecture (Industrial Project)
+
+
+Tech Stack - Databricks, PySpark, Delta Lake, Delta Live Table Job
+
+
+
+
+
+
+
+
+
+
+                                                   Module 8 - Data Warehousing 
+                                                
+
+
+
+
+â Class - 1  (Theory Part Recorded)
+
+
+
+ OLAP vs OLTP
+
+
+
+
+
+
+ What is a Data Warehouse?
+
+
+
+
+
+
+ Difference between Data Warehouse, Data Lake and Data Mart
+
+
+
+
+
+
+ Fact Tables
+
+
+
+
+
+
+ Dimension Tables
+
+
+
+
+
+
+ Slowly changing Dimensions
+
+
+
+
+
+
+ Types of SCDs
+
+
+
+
+
+
+ Star Schema Design
+
+
+
+
+
+
+ Snowflake Schema Design
+
+
+
+
+
+
+ Galaxy Schema Design
+
+
+
+
+
+â Class - 2 
+
+
+
+ Case Study - 1: Uber Data Warehouse Design Case Study
+
+
+
+
+
+
+ Case Study - 2: AirBnB Data Warehouse Design Case Study
+
+
+
+
+
+
+
+
+
+
+                                                   Module 9 - Snowflake & BigQuery
+                                                
+
+
+
+
+â Class - 1
+
+
+
+ Snowflake free tier account setup
+
+
+
+
+
+
+ Snowflake UI walkthrough
+
+
+
+
+
+
+ Load data from UI and create snowflake table
+
+
+
+
+
+
+ Hands On - Event driven data ingestion in snowflake table using SnowPipe 
+
+
+ Tech Stack Used : Google Storage Bucket, GCP Pub-Sub, Snowflake
+
+
+
+
+
+
+ How to create and schedule task in snowflake
+
+
+
+
+
+â Class - 2
+
+
+
+ Project - 1:  News Data Analysis with event driven incremental load in Snowflake table(Industrial Project)
+
+
+Tech Stack: Airflow, Google Cloud Storage, Python, Snowflake
+
+
+
+
+
+
+ Project - 2: Movie Booking CDC data real time aggregation in Snowflake Dynamic Table(Industrial Project)
+
+
+Tech Stack: Python, Snowflake Dynamic Table, Snowflake Stream, Snowflake Tasks, Streamlit
+
+
+
+
+
+
+ Project - 3: Car rental data batch ingestion with SCD2 merge in snowflake table(Industrial Project)
+
+
+Tech Stack: Python, PySpark, GCP Dataproc, Airflow, Snowflake
+
+
+
+
+
+â Class - 3  (Recorded)
+
+
+
+ BigQuery Overview
+
+
+
+
+
+
+ BigQuery Architecture
+
+
+
+
+
+
+ Capacitor â Columnar format
+
+
+
+
+
+
+ Colossus â Storage
+
+
+
+
+
+
+ Dremel â Execution Engine
+
+
+
+
+
+
+ Borg â Compute
+
+
+
+
+
+
+ Jupiter â Network
+
+
+
+
+
+
+ Project - 1: IRCTC Streaming data ingestion into BigQuery(Industrial Project)
+
+
+ Tech Stack: Python GCP Storage, GCP Pub-Sub, BigQuery, Dataflow
+
+
+
+
+
+
+ Project - 2: Walmart data ingestion into BigQuery(Industrial Project)
+
+
+ Tech Stack: Python GCP Storage, Airflow, BigQuery
+
+
+
+
+
+
+
+
+
+
+                                                  Module 10 - AZURE Cloud
+                                                
+
+
+
+
+
+
+
+ Azure Services Covered
+
+
+ Azure Blob Storage, Azure Functions, Azure Role-Based Access Control (RBAC), Azure Virtual Machines (VMs), Azure Logic Apps, Azure Service Bus (Queue, Topics), Azure Key Vault
+
+
+ Azure Stream Data Analytics, Azure Event Hubs, Azure Cosmos DB, Azure Data Factory, Azure SQL Database, Azure Synapse, Azure Delta Lake, Azure DevOPS
+
+
+
+â Class - 1
+
+
+
+ Setup Free Trial Azure Cloud Account
+
+
+
+
+
+
+ Setup VSCode with Azure Extensions
+
+
+
+
+
+
+ Azure Blob Storage (Storage Account, Container, Blob)
+
+
+
+
+
+
+ Azure CLI Setup to interact with Azure Services
+
+
+
+
+
+
+ Read data from Azure Blob using Python
+
+
+
+
+
+
+ Azure Function & Azure Function App
+
+
+
+
+
+
+ HTTP Trigger based Azure Function
+
+
+
+
+
+
+ Deployment of Azure Function in Azure Function app from VSCode
+
+
+
+
+
+
+â Class - 2
+
+
+
+ Implementation and Deployment of Azure Function with Blob Trigger
+
+
+
+
+
+
+ Azure Service Bus basics - Topic & Queue
+
+
+
+
+
+
+ Azure Service Bus Setup
+
+
+
+
+
+
+ Topic creation in Azure Service Bus
+
+
+
+
+
+
+ Write messages in Topic from Azure Console
+
+
+
+
+
+
+ Subscriber setup for Topic and Read (Peek and Receive Mode) messages from Azure Console
+
+
+
+
+
+
+ Implementation of Azure Logic App where Azure Function will listen to Blob trigger and publish blob details into Topics, inside Logic App it will read message content from Topic and send customize email with attachment
+
+
+
+
+
+
+ Implementation and deployment of Azure function app with Service Bus Topic trigger along with publishing mock data in Service Bus Topic using Python code
+
+
+
+
+
+
+ Azure Service Bus Queue basics
+
+
+
+
+
+
+ Create Queue from Azure Console
+
+
+
+
+
+
+ Read & Write messages in Queue from Azure Console
+
+
+
+
+
+
+ Implementation and deployment of Azure function app with Service Bus Queue trigger along with publishing mock data in Service Bus Queue using Python code
+
+
+
+
+
+
+â Class - 3
+
+
+
+ Azure Virtual Machine Setup
+
+
+
+
+
+
+ SSH based login from terminal in VM
+
+
+
+
+
+
+ Azure SQL Database fundamentals
+
+
+
+
+
+
+ Setup Azure SQL database from Azure Portal
+
+
+
+
+
+
+ SQL commands for Azure SQL database using Query Editor
+
+
+
+
+
+
+ Azure Key-Vault basics
+
+
+
+
+
+
+ How to create and store secrets in Azure Key-Vault
+
+
+
+
+
+
+ Access & Manipulate data in SQL database using Python script (Access secrets from Key-Vault)
+
+
+
+
+
+
+ Azure Event Hub Fundamentals
+
+
+
+
+
+
+ Difference between Azure Event Hub & Kafka
+
+
+
+
+
+
+ Setup Azure event hub namespace from Azure Portal
+
+
+
+
+
+
+ Create event hub in namespace
+
+
+
+
+
+
+ Publish data in event hub using Python script
+
+
+
+
+
+
+ Create consumer group in event hub
+
+
+
+
+
+
+ Consume data from event hub using Python script
+
+
+
+
+
+
+ Azure Stream Analytics job basics
+
+
+
+
+
+
+ Create Inputs, Outputs & Query in Stream Analytics Job
+
+
+
+
+
+
+ Setup Stream Analytics job to read data from event hub in real time, apply window based aggregations and ingest data in SQL database
+
+
+
+
+
+
+â Class - 4
+
+
+
+ Azure CosmosDB Fundamentals
+
+
+
+
+
+
+ Setup CosmosDB Account from Azure Portal
+
+
+
+
+
+
+ Create dataset and containers in CosmosDB
+
+
+
+
+
+
+ Connect & Manipulate data in CosmosDB using Python
+
+
+
+
+
+
+ Azure Data Factory Fundamentals
+
+
+
+
+
+
+ Create first Azure Data Factory Namespace
+
+
+
+
+
+
+ Connect ADF with Github
+
+
+
+
+
+
+ Setup Linked Services for ADLS & Snowflake in ADF
+
+
+
+
+
+
+ Create CSV file and Snowflake table datasets
+
+
+
+
+
+
+ Create DataFlow in ADF
+
+
+
+
+
+
+ Perform source, filter, aggregate & sink transformations in ADF
+
+
+
+
+
+
+ Debug Dataflow
+
+
+
+
+
+
+ Create Pipeline in ADF with DataFlow activity
+
+
+
+
+
+
+ Manual trigger for ADF pipeline
+
+
+
+
+
+
+ Azure Synapse Analytics fundamentals and Architecture
+
+
+
+
+
+
+ Setup first Azure Synpase Analytics workspace
+
+
+
+
+
+
+ Different features of Synapse Studio
+
+
+
+
+
+
+ Work with in-built and dedicated SQL pools
+
+
+
+
+
+
+ SQL Database under workspace
+
+
+
+
+
+
+ Read external files using in-built SQL pool queries
+
+
+
+
+
+
+ Create external tables using in-built sql pool
+
+
+
+
+
+
+ Work with SQL worksheet and create Schema, Internal & External tables in dedicated sql pool
+
+
+
+
+
+
+ Setup Spark SQL Pool
+
+
+
+
+
+
+ Create PySpark notebook in Synapse and write data in delta tables in Lake Database
+
+
+
+
+
+
+ Create linked services for ADLS and CosmosDB in Synapse
+
+
+
+
+
+
+ Data ingestion pipeline in Synapse Analytics
+
+
+
+
+
+
+
+
+
+
+                                                  Module 11 - Apache Iceberg & Hudi
+                                                
+
+
+
+
+
+
+
+ Challenges with traditional data lake storages?
+
+
+
+
+
+
+ What is open table format?
+
+
+
+
+
+
+ Challenges solved by open table formats?
+
+
+
+
+
+
+ What is small file problem?
+
+
+
+
+
+
+ How open table formats solved small file problem?
+
+
+
+
+
+
+ Apache Iceberg Overview
+
+
+
+
+
+
+ Apache Iceberg Architecture Overview
+
+
+
+
+
+
+ How Iceberg catalog works?
+
+
+
+
+
+
+ Metadata layer - Metadata files, Manifest lists and Manifest files
+
+
+
+
+
+
+ Data Layer - Data Files
+
+
+
+
+
+
+ Backend representation of Iceberg tables after CRUD operations
+
+
+
+
+
+
+ After Create Table Command
+
+
+
+
+
+
+ After Insert Command
+
+
+
+
+
+
+ After MERGE INTO / UPSERT Command
+
+
+
+
+
+
+ Copy-On-Write Approach (CoW)
+
+
+
+
+
+
+ Delete files
+
+
+
+
+
+
+ Positional Delete Files
+
+
+
+
+
+
+ Equality Delete Files
+
+
+
+
+
+
+ Merge-on-Read Approach (MoR)
+
+
+
+
+
+
+ How to choose between COW and MOR?
+
+
+
+
+
+
+ Behind the scene process while running Select commands on Iceberg tables
+
+
+
+
+
+
+ Create Table Command in Iceberg
+
+
+
+
+
+
+ Insert Command in Iceberg
+
+
+
+
+
+
+ Delete & Update Commands in Iceberg
+
+
+
+
+
+
+ Alter Command in Iceberg
+
+
+
+
+
+
+ Merge Query in Iceberg
+
+
+
+
+
+
+  Time travel Query (Read) in Iceberg
+
+
+
+
+
+
+ Compaction in Iceberg
+
+
+
+
+
+
+ Data pipeline with Iceberg on AWS & Snowflake (Case Study)
+
+
+
+
+
+
+ Medallion Architecture with Iceberg (Case Study)
+
+
+
+
+
+
+ Apache Hudi Overview
+
+
+
+
+
+
+ Apache Hudi Architecture
+
+
+
+
+
+
+ Data Sources
+
+
+
+
+
+
+ Hudi Core - ACID Guarantees, Incremental Pipelines, Multimodal Indexes, Managed Tables
+
+
+
+
+
+
+ Lakehouse Platform
+
+
+
+
+
+
+ Metadata
+
+
+
+
+
+
+ Data Sinks 
+
+
+
+
+
+
+ Apache Hudi Storage Layout - Base Path, Meta Path, Partition Paths, Data Files
+
+
+
+
+
+
+ Apache Hudi Query Types
+
+
+
+
+
+
+ Snapshot Queries
+
+
+
+
+
+
+ Time Travel Queries
+
+
+
+
+
+
+ Read Optimized Queries (Only MoR tables)
+
+
+
+
+
+
+ Incremental Queries (Latest State)
+
+
+
+
+
+
+ Incremental Queries(CDC)
+
+
+
+
+
+
+ Create Table Command in Hudi
+
+
+
+
+
+
+ Alter Command in Hudi
+
+
+
+
+
+
+ Insert, Update & Delete Command in Hudi
+
+
+
+
+
+
+ Merge Query in Hudi
+
+
+
+
+
+
+ Time Travel QUERIES in Hudi
+
+
+
+
+
+
+ Case Study of Data pipeline of Apna with Hudi
+
+
+
+
+
+
+ Develop and execute PySpark application in GCP Dataproc environment for Write
+
+
+
+
+
+
+ Configure Glue catalog for Iceberg tables in Spark session along with GCS warehouse path
+
+
+
+
+
+
+ Build dummy dataframe and use createOrReplace() dataframe v2 api to create Iceberg table with partitions & other table properties
+
+
+
+
+
+
+ Perform append() operation on Iceberg table
+
+
+
+
+
+
+ Perform overwritePartitions() operation on Iceberg table
+
+
+
+
+
+
+ Perform merge query on Iceberg table
+
+
+
+
+
+
+ Understanding of iceberg metadata file after each write operation
+
+
+
+
+
+
+ Develop and execute PySpark application in GCP Dataproc environment for Read
+
+
+
+
+
+
+ Read iceberg table data for latest snapshot
+
+
+
+
+
+
+ Query snapshot information of Iceberg table
+
+
+
+
+
+
+ Read iceberg table for specific snapshot_id
+
+
+
+
+
+
+ Read iceberg table for specific committed timestamp
+
+
+
+
+
+
+
+
+
+
+                                                 Module 12 - Apache Trino
+                                                
+
+
+
+
+
+
+
+ Trino Architecture & Query Lifecycle
+
+
+
+
+
+
+ Coordinator vs. Worker: roles and how work is split
+
+
+
+
+
+
+ From SQL â logical plan â physical plan â distributed execution
+
+
+
+
+
+
+ Data shuffling and result aggregation
+
+
+
+
+
+
+ Cluster Setup & Configuration
+
+
+
+
+
+
+ Installing Trino nodes and starting coordinator & workers
+
+
+
+
+
+
+ Basic inter-node connectivity
+
+
+
+
+
+
+ Defining catalogs to register data sources
+
+
+
+
+
+
+ Catalogs & Connectors
+
+
+
+
+
+
+ Hive connector for your data lake
+
+
+
+
+
+
+ Iceberg/Delta Lake support for ACID tables
+
+
+
+
+
+
+ JDBC (e.g. MySQL/Postgres) and Kafka connectors
+
+
+
+
+
+
+ ANSI-SQL & Advanced Querying
+
+
+
+
+
+
+ Joins, window functions, CTEs
+
+
+
+
+
+
+ Nested types (arrays, maps, structs)
+
+
+
+
+
+
+ Materialized views and runtime filtering
+
+
+
+
+
+
+ Performance Tuning
+
+
+
+
+
+
+ Memory pool limits & spill behavior
+
+
+
+
+
+
+ Cost-based planning with table statistics
+
+
+
+
+
+
+ Predicate pushdown to minimize I/O
+
+
+
+
+
+
+
+
+
+
+                                                   Module 13 - Industrial Projects (15 Projects)
+                                                
+
+
+
+
+
+
+
+â Project - 1: Flight Booking Data Pipeline with Airflow & CICD  (Covered In Module 6)
+
+
+  Tech Stack - GitHub, GitHub Actions, Google Storage, PySpark, Dataproc Serverless, Airflow, BigQuery
+
+
+
+
+
+
+â Project - 2: Order Tracking Event Driven Data Ingestion   (Covered In Module 7)
+
+
+ Tech Stack - Google Storage, PySpark, Databricks, Delta Lake, Databricks Workflows, GitHub
+
+
+
+
+
+
+â Project - 3: UPI Transactions Real Time CDC Feed Processing (Covered In Module 7)
+
+
+ Tech Stack - Databricks, Spark Structured Streaming, Delta Lake
+
+
+
+
+
+
+â Project - 4: Travel Bookings Data Ingestion Pipeline With SCD2 Merge  (Covered In Module 7)
+
+
+  Tech Stack - Databricks, PySpark, Delta Lake, Delta Live Table Job
+
+
+
+
+
+
+â Project - 5: Healthcare Delta Live Table Pipeline with Medallion Architecture (Covered In Module 7)
+
+
+  Tech Stack - Databricks, PySpark, Delta Lake, Delta Live Table Job
+
+
+
+
+
+
+â Project - 6: News Data Analysis with Event-Driven Incremental Load in Snowflake Table  (Covered In Module 9)
+
+
+ Tech Stack: Airflow, Google Cloud Storage, Python, Snowflake
+
+
+
+
+
+
+â Project - 7:  Movie Booking CDC data real time aggregation in Snowflake Dynamic Table  (Covered In Module 9)
+
+
+ Tech Stack: Python, Snowflake Dynamic Table, Snowflake Stream, Snowflake Tasks, Streamlit
+
+
+
+
+
+
+â Project - 8: Car Rental Data Batch Ingestion with SCD2 Merge in Snowflake Table (Covered In Module 9)
+
+
+ Tech Stack: Python, PySpark, GCP Dataproc, Airflow, Snowflake
+
+
+
+
+
+
+â Project - 9: IRCTC Streaming Data Ingestion into BigQuery (Covered In Module 9)
+
+
+ Tech Stack: Python, GCP Storage, GCP Pub-Sub, BigQuery, Dataflow
+
+
+
+
+
+
+â Project - 10:  Walmart Data Ingestion into BigQuery (Covered In Module 9)
+
+
+ Tech Stack: Python, Airflow, GCP Storage, BigQuery
+
+
+
+
+
+
+â Project - 11: AirBnB CDC Ingestion Pipeline
+
+
+ Tech Stack: AZURE, Python, ADLS, CosmosDB, Azure Data Factory, Azure Synapse, SQL
+
+
+
+
+
+
+â Project - 12: Fintech SQL Data migration into Azure Portal
+
+
+ Tech Stack: AZURE, Python, Azure SQL Database, Azure Synapse, ADLS, PySpark, SQL, Delta Tables
+
+
+
+
+
+
+â Project - 13: BookMyShow Online Ticket Booking Stream data processing
+
+
+ Tech Stack: AZURE, Python, EventHub, Azure Stream Analytics Job, SQL, Synapse DWH
+
+
+
+
+
+
+â  Project - 14: Airlines Data Incremental data processing with CICD Process
+
+
+ Tech Stack: AZURE, ADLS, Logic Apps, Azure Data Factory, Azure Synapse, GitHub, Azure DevOPS
+
+
+
+
+
+
+â Project - 15: Credit Card Transactional Analysis For Fraud Risk
+
+
+ Tech Stack: Python, PySpark, Google Storage, GCP Dataproc Serverless, GCP BigQuery, GCP Composer (Airflow), PyTest, GitHub, GitHub Actions (For CI/CD) 
+
+
+
+
+
+
+
+ â Few exclusive projects around Iceberg, Hudi & Trino
+
+
+
+
+
+
+
+
+
+
+                                                  Module 14 - Resume, LinkedIn & Interview Strategies 
+                                                
+
+
+
+
+
+
+
+ Attention Seeking Resume Preparation and Interview Strategies
+
+
+
+
+
+
+ Strategies To Crack Tech Interviews
+
+
+
+
+
+
+ Linkedin Profile Making
+
+
+
+
+
+
+ How To Expand Your Professional Network On Linkedin
+
+
+
+
+
+
+ How To Use Various Job Portals
+
+
+
+
+
+
+ How To Approach For Referrals
+
+
+
+
+
+
+
+
+
+

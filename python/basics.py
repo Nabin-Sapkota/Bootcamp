@@ -1,7 +1,4 @@
 # integer used in patient age , claim counts
-from logging import NullHandler
-
-
 age = 38
 
 #float  used in claim amount, averages
