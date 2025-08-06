@@ -1,0 +1,11 @@
+patient_id,first_name,last_name,date_of_birth,gender,state,zip_code,insurance_plan,date_of_admission,diagnosis_code,claim_amount
+P001,John,Doe,1955-06-15,M,NY,10001,PlanA,2023-04-10,I10,1200.50
+P002,Jane,Smith,1987-11-22,F,CA,90012,PlanB,2023-03-15,E11,850.00
+P003,Bob,Johnson,,M,TX,73301,PlanA,2023-05-20,J45,650.75
+P004,Alice,Williams,1970-02-28,F,NY,10003,PlanC,2023-01-05,I25,4300.00
+P005,Tom,Brown,1945-09-30,M,,PlanB,2023-02-11,E78,1900.25
+P006,Linda,Davis,2001-12-02,F,IL,60601,PlanA,2023-06-01,Z00,0
+P007,Michael,Miller,1950-01-18,M,FL,33101,PlanC,2023-04-25,I10,2100.00
+P008,Susan,Wilson,1965-07-07,F,CA,90015,,2023-03-10,E11,900.50
+P009,David,Moore,1980-05-21,M,TX,73301,PlanB,2023-05-22,J20,-100
+P010,Karen,Taylor,1992-10-10,F,NY,,PlanA,2023-04-30,I10,1100.00
