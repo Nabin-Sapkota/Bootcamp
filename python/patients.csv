@@ -1,0 +1,8 @@
+patient_id,first_name,last_name,date_of_birth,gender,state,zip_code,insurance_plan
+P001,John,Doe,1955-06-15,M,NY,10001,PlanA
+P002,Jane,Smith,1987-11-22,F,CA,90012,PlanB
+P003,Bob,Johnson,1975-07-30,M,TX,73301,PlanA
+P004,Alice,Williams,1970-02-28,F,NY,10003,PlanC
+P005,Tom,Brown,1945-09-30,M,IL,60601,PlanB
+P006,Linda,Davis,2001-12-02,F,IL,60601,PlanA
+P007,Michael,Miller,1950-01-18,M,FL,33101,PlanC
