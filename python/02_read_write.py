@@ -21,3 +21,4 @@ with open('textfile.txt', 'r') as f:
 
     with open('textfile.txt', 'a') as f: 
         f.write("This is another line\n")
+
