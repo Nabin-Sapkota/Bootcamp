@@ -1,0 +1,232 @@
+HIPPA transactions 
+837 _ 
+Electornic claim submitted by providers to payers requesting payement.
+Use case is claim submission from doctor or hospital to insurer.
+
+835 _
+Eleectronic remittance from payers to providers explaining payment or denial
+Use case is explanation of benefits(EOB) detailing payment.
+
+Example snippet (837 claim segment)
+ISA*00*          *00*          *ZZ*PROVIDERID    *ZZ*PAYERID        *210101*1230*^*00501*000000905*1*T*:~
+GS*HC*PROVIDERID*PAYERID*20210101*1230*1*X*005010X222A1~
+ST*837*0001*005010X222A1~
+NM1*IL*1*DOE*JOHN****MI*123456789~
+CLM*12345*500***11:B:1*Y*A*Y*I~
+SE*25*0001~
+GE*1*1~
+IEA*1*000000905~
+
+
+📄 Breakdown of the EDI 837 Snippet
+1️⃣ ISA Segment – Interchange Control Header
+markdown
+Copy
+Edit
+ISA*00*          *00*          *ZZ*PROVIDERID    *ZZ*PAYERID        *210101*1230*^*00501*000000905*1*T*:~
+ISA → Interchange Control Header segment (marks the start of the EDI interchange).
+
+00 → Authorization Information Qualifier (No Authorization Information).
+
+(blank) → Authorization Information (unused).
+
+00 → Security Information Qualifier (No Security Information).
+
+(blank) → Security Information (unused).
+
+ZZ → Interchange ID Qualifier (Mutually Defined).
+
+PROVIDERID → Sender ID (Provider’s ID).
+
+ZZ → Interchange ID Qualifier for receiver.
+
+PAYERID → Receiver ID (Payer’s ID).
+
+210101 → Interchange Date (YYMMDD → 2021-01-01).
+
+1230 → Interchange Time (HHMM → 12:30 PM).
+
+^ → Repetition Separator.
+
+00501 → Interchange Control Version Number (X12 version 5010).
+
+000000905 → Interchange Control Number.
+
+1 → Acknowledgment Requested (1 = Yes).
+
+T → Test Indicator (T = Test file, P = Production).
+
+: → Component Element Separator.
+
+2️⃣ GS Segment – Functional Group Header
+markdown
+Copy
+Edit
+GS*HC*PROVIDERID*PAYERID*20210101*1230*1*X*005010X222A1~
+GS → Functional Group Header segment.
+
+HC → Functional Identifier Code (HC = Health Care Claim).
+
+PROVIDERID → Application Sender’s Code.
+
+PAYERID → Application Receiver’s Code.
+
+20210101 → Date (YYYYMMDD → 2021-01-01).
+
+1230 → Time (HHMM).
+
+1 → Group Control Number.
+
+X → Responsible Agency Code (Accredited Standards Committee X12).
+
+005010X222A1 → Version/Release/Industry Identifier Code (837 Professional Claim).
+
+3️⃣ ST Segment – Transaction Set Header
+markdown
+Copy
+Edit
+ST*837*0001*005010X222A1~
+ST → Transaction Set Header.
+
+837 → Transaction Set Identifier Code (837 = Health Care Claim).
+
+0001 → Transaction Set Control Number (matches SE segment).
+
+005010X222A1 → Implementation Guide Version.
+
+4️⃣ NM1 Segment – Subscriber Name
+markdown
+Copy
+Edit
+NM1*IL*1*DOE*JOHN****MI*123456789~
+NM1 → Individual or Organization Name segment.
+
+IL → Entity Identifier Code (IL = Insured or Subscriber).
+
+1 → Entity Type Qualifier (1 = Person).
+
+DOE → Last Name.
+
+JOHN → First Name.
+
+(blank) → Middle Name.
+
+(blank) → Name Prefix.
+
+(blank) → Name Suffix.
+
+MI → Identification Code Qualifier (MI = Member ID).
+
+123456789 → Member/Subscriber Identifier.
+
+5️⃣ CLM Segment – Claim Information
+less
+Copy
+Edit
+CLM*12345*500***11:B:1*Y*A*Y*I~
+CLM → Claim Information segment.
+
+12345 → Claim Submitter’s Identifier (Claim Number).
+
+500 → Total Claim Charge Amount ($500).
+
+(blank) → Claim Facility Code (optional here).
+
+(blank) → Claim Facility Code Qualifier (optional).
+
+11:B:1 → Place of Service (11 = Office), Facility Code Qualifier (B), Claim Frequency Code (1 = Original Claim).
+
+Y → Provider Accepts Assignment (Yes).
+
+A → Benefits Assignment Certification Indicator (A = Assigned).
+
+Y → Release of Information Code (Y = Yes).
+
+I → Patient Signature Source Code (I = Signature on File).
+
+6️⃣ SE Segment – Transaction Set Trailer
+markdown
+Copy
+Edit
+SE*25*0001~
+SE → Transaction Set Trailer.
+
+25 → Number of included segments in the transaction set.
+
+0001 → Transaction Set Control Number (must match ST).
+
+7️⃣ GE Segment – Functional Group Trailer
+markdown
+Copy
+Edit
+GE*1*1~
+GE → Functional Group Trailer.
+
+1 → Number of transaction sets in this functional group.
+
+1 → Group Control Number (matches GS).
+
+8️⃣ IEA Segment – Interchange Control Trailer
+markdown
+Copy
+Edit
+IEA*1*000000905~
+IEA → Interchange Control Trailer.
+
+1 → Number of included functional groups.
+
+000000905 → Interchange Control Number (matches ISA).
+
+
+
+
+
+
+
+Sample 837P File Snippet
+ISA*00*          *00*          *ZZ*1234567        *ZZ*11111          *170508*1141*^*00501*000000101*1*P*:~
+GS*HC*XXXXXXX*XXXXX*20170617*1741*101*X*005010X222A1~
+ST*837*1239*005010X222A1~
+BHT*0019*00*010*20170617*1741*CH~
+NM1*41*2*SUBMITTER*****46*ABC123~
+PER*IC*BOB SMITH*TE*4805551212~
+NM1*40*2*RECEIVER*****46*44556~
+HL*1**20*1~
+NM1*85*2*BILLING PROVIDER*****XX*1122334455~
+N3*1234 SOME ROAD~
+N4*CHICAGO*IL*606739999~
+REF*EI*999999999~
+HL*2*1*22*0~
+SBR*P*18*******12~
+NM1*IL*1*BLOGGS*JOE****MI*1234567890~
+N3*1 SOME BLVD~
+N4*CHICAGO*IL*606129998~
+DMG*D8*19570111*M~
+NM1*PR*2*PAYER*****PI*12345~
+N3*1 PAYER WAY~
+N4*ST LOUIS*MO*212441850~
+REF*2U*W1014~
+CLM*1000A*140***19:B:1*Y*A*Y*Y~
+HI*ABK:I10~
+LX*1~
+SV1*HC:99213*140*UN*1***1~
+DTP*472*D8*20151124~
+SE*41*1239~
+GE*1*101~
+IEA*1*000000101~
+
+| Segment                             | Description                                                    | Relevance to Data Quality Engineering                                                     |
+| ----------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **ISA…IEA**                         | Handles file-level control (sender, receiver, date/time, etc.) | Ensures the file is legitimate and formatted correctly                                    |
+| **NM1 (Submitter/Receiver)**        | Identifies who is sending/receiving the claim electronically   | Crucial for routing and data consistency                                                  |
+| **HL (Hierarchical Level)**         | Defines relationship levels (provider, subscriber, patient)    | Key for mapping hierarchical data and validating structure ([knowledge.therabill.com][1]) |
+| **NM1 (Billing Provider)**          | Details about the billing provider (name, NPI)                 | Must be accurate to avoid misdirected or rejected claims                                  |
+| **SBR / Subscriber / Patient Info** | Provides insurance and patient demographic data                | Critical for eligibility, identity verification, and follow-up                            |
+| **CLM (Claim Info)**                | Claim-specific data: ID, charges, type                         | Core area for validating completeness and correctness of billing                          |
+| **HI (Health Information)**         | Diagnosis codes like ICD-10 (e.g., I10)                        | Must be accurate—otherwise claim may be denied or misclassified                           |
+| **SV1 (Service Line)**              | Procedure details (CPT code, cost, units)                      | Essential for checking pricing, code validity, and procedure count                        |
+| **DTP (Date)**                      | Service date; formatting (D8) must be correct                  | Checks for time-related errors, duplicates, or missing dates                              |
+| **SE, GE, IEA**                     | Transaction set trailers and file-group closures               | Ensure each batch/file is complete with correct segment counts                            |
+
+[1]: https://knowledge.therabill.com/hc/en-us/articles/360006846471-How-to-Read-an-EDI-837-File-Overview?utm_source=chatgpt.com "How to Read an EDI (837) File - Overview - Therabill"
+
