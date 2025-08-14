@@ -230,3 +230,105 @@ IEA*1*000000101~
 
 [1]: https://knowledge.therabill.com/hc/en-us/articles/360006846471-How-to-Read-an-EDI-837-File-Overview?utm_source=chatgpt.com "How to Read an EDI (837) File - Overview - Therabill"
 
+
+1. What is the UB-04 Form?
+
+Standard paper form for institutional claims (hospitals, rehab centers, skilled nursing facilities, etc.).
+
+Electronic version: 837I (Institutional).
+
+Contains detailed fields for:
+
+Patient demographics
+
+Facility information
+
+Type of bill
+
+Revenue codes
+
+Service dates
+
+Diagnosis and procedure codes
+
+2. Key UB-04 Fields
+Locator (FL)	Field Name	Example	Description
+FL 01	Provider Name/Address	"General Hospital, 123 Main St"	Facility submitting the claim
+FL 03a	Patient Control Number	"GH12345"	Internal tracking ID
+FL 04	Type of Bill	"111"	1st digit: facility type, 2nd: bill classification, 3rd: frequency
+FL 06	Statement Covers Period	2025-07-01 to 2025-07-05	Service date range
+FL 42	Revenue Code	0300	Identifies department/service
+FL 44	HCPCS/Rate	99223	Procedure code or daily rate
+FL 67	Principal Diagnosis Code	I10	Main reason for admission
+FL 76	Attending Physician NPI	1234567890	Physician overseeing care
+3. Revenue Codes
+
+4-digit numbers identifying the department/service for a charge.
+
+Examples:
+
+0300: General Medical/Surgical
+
+0250: Pharmacy
+
+0450: Emergency Room
+
+0270: Medical/Surgical Supplies
+
+4. UB-04 vs CMS-1500
+UB-04 (Institutional)	CMS-1500 (Professional)
+Used by hospitals, SNFs, rehab, hospice	Used by physicians, clinics
+Includes revenue codes	No revenue codes
+Includes type of bill code	No type of bill
+837I electronic equivalent	837P electronic equivalent
+5. Sample UB-04 Data Table
+Claim ID	Patient Name	Type of Bill	Revenue Code	HCPCS	DOS From	DOS To	Diagnosis Code	Amount
+UB001	Alice Brown	111	0300	99223	2025-08-01	2025-08-03	I10	2500.00
+UB002	Bob Green	451	0450	99285	2025-08-02	2025-08-02	J20.9	900.00
+6. Sample 837I Snippet
+ISA*00*          *00*          *ZZ*HOSPITALID     *ZZ*PAYERID        *210101*1230*^*00501*000000905*1*T*:~
+GS*HC*HOSPITALID*PAYERID*20210101*1230*1*X*005010X223A2~
+ST*837*0001*005010X223A2~
+NM1*IL*1*DOE*JOHN****MI*123456789~
+CLM*54321*2500***11:A:1*Y*A*Y*I~
+HI*ABK:I10~
+SV2*0300*HC:99223*2500*UN*1~
+SE*25*0001~
+GE*1*1~
+IEA*1*000000905~
+
+
+Key differences from 837P:
+
+SV2 segment instead of SV1 (used for institutional services with revenue codes).
+
+HI segment for diagnosis codes.
+
+Type of Bill appears in CLM segment.
+
+7. Practice Questions
+
+What does the "Type of Bill" field represent in UB-04?
+
+Give 3 examples of revenue codes and what they represent.
+
+Which claim form is used for hospital inpatient services?
+
+In the 837I, which segment holds the revenue code?
+
+What is the difference between 837I and 837P?
+
+8. Practice Task — Manual Validation
+
+Review the below UB-04 sample data and identify:
+
+Missing codes
+
+Incorrect revenue code usage
+
+Date inconsistencies
+
+Claim ID	Type of Bill	Revenue Code	HCPCS	DOS From	DOS To	Diagnosis Code	Amount
+UB003	111	0300	99223	2025-08-01	2025-08-03	I10	3000
+UB004	111		99223	2025-08-05	2025-08-04	E11.9	2800
+UB005	451	0450		2025-08-02	2025-08-02	J20.9	900
