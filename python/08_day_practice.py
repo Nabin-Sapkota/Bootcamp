@@ -22,13 +22,7 @@ print(amounts)
 tuple_data = ("PR-0001", "NLIC", "Orthopedics")
 print(tuple_data[2])
 
-# Dictionaries
-# Create a dictionary mapping Member_ID to Date_of_Birth. Add one new member and print all keys
 
-dict_data = {
-    "ID": "MEM001",
-    "DOB": "2025-05-09"
-}
 
 #  Given { "C101": 500, "C102": 200, "C103": 300 }, calculate the sum of all amounts.
 claims_one = { "C101": 500, "C102": 200, "C103": 300 }
@@ -51,8 +45,15 @@ if to_find in set_data:
 else: 
     print("Not Present")
 
+#Create a dictionary mapping Claim_ID to Amount
+claims = [
+    {"Claim_ID": "C101", "Member_ID": "M001", "Amount": 500},
+    {"Claim_ID": "C102", "Member_ID": "M002", "Amount": 200},
+    {"Claim_ID": "C103", "Member_ID": "M001", "Amount": 300},
+]
 
-
+claim_amount_map = {claim["Claim_ID"] : claim["Amount"] for claim in claims}
+print(claim_amount_map)
 
 
 
