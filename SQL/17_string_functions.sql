@@ -12,3 +12,8 @@ select ltrim(' Hello ') as noSpaces;
 select rtrim(name) as noSpaces from patients_table;
 
 
+select replace('John Doe', 'e', 'o') from patients_table;
+select * from patients_table;
+
+select reverse(name) from patients_table;
+-- select stuff('Hello',2,3,'x') ;
