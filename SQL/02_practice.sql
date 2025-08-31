@@ -41,3 +41,29 @@ group by provider_id;
 select claim_status, count(*) as total
 from claims
 group by claim_status;
+
+-- find top three providers with highest claims
+select provider_id, sum(claim_amount) as total 
+from claims 
+group by provider_id order by total desc limit 3;
+
+-- average paid amount for each diagnosis
+select diagnosis_code, avg(claim_amount) as average
+from claims 
+group by diagnosis_code;
+
+-- find members who have  claims in feb 2025 with count
+select member_id, count(*) as total_claims 
+from claims 
+where service_date >= '2025-02-01' and service_date < '2025-03-01'
+group by member_id;
+
+-- alternate way
+select member_id, count(*) as total_claims 
+from claims 
+where extract(month from service_date) = 2
+  and extract(year from service_date) = 2025
+group by member_id;
+
+-- find claims where paid amount is zero or denied
+select * from claims where paid_amount = 0;
