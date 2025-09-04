@@ -39,3 +39,56 @@ IaaS (Infrastructure as a Service) – Rent virtual servers, storage, networking
 PaaS (Platform as a Service) – Provides tools and platforms to build and deploy apps without managing hardware (e.g., Heroku, Google App Engine).
 
 SaaS (Software as a Service) – Ready-to-use applications delivered via the cloud (e.g., Gmail, Dropbox, Salesforce).
+
+
+Introduction to Microsoft Azure
+
+Microsoft Azure is a cloud computing platform and service created by Microsoft. It provides on-demand access to a wide range of resources such as virtual machines, databases, networking, AI tools, storage, and more — all delivered over the internet.
+
+Launched in 2010, Azure is now the second-largest cloud provider after AWS and is widely used by businesses of all sizes.
+
+⚡ Key Features of Azure
+
+Global Presence – Azure has 60+ regions worldwide, offering fast, reliable, and local access to cloud services.
+
+Hybrid Cloud – Strong support for combining on-premises data centers with cloud (via Azure Arc, Azure Stack).
+
+Wide Range of Services – From computing power to databases, AI, IoT, DevOps tools, and security.
+
+Pay-as-you-go Pricing – You only pay for what you use.
+
+Enterprise Integration – Works seamlessly with Microsoft tools like Windows Server, Office 365, Active Directory.
+
+🏗️ Azure Service Models
+
+Like other cloud providers, Azure services fall into three categories:
+
+IaaS (Infrastructure as a Service) – Virtual machines, networking, storage. Example: Azure Virtual Machines.
+
+PaaS (Platform as a Service) – A ready-to-use platform for developers to build apps without managing servers. Example: Azure App Service.
+
+SaaS (Software as a Service) – Cloud-hosted apps ready for end-users. Example: Microsoft 365, Dynamics 365.
+
+📌 Popular Azure Services
+
+Azure Virtual Machines (VMs) – Create and manage Windows/Linux virtual servers.
+
+Azure SQL Database – Managed relational database.
+
+Azure Blob Storage – Store large amounts of unstructured data (images, videos, backups).
+
+Azure Kubernetes Service (AKS) – Container orchestration using Kubernetes.
+
+Azure Functions – Serverless computing (run code without managing servers).
+
+Azure Active Directory (AD) – Identity and access management.
+
+🎯 Why Companies Use Azure
+
+Flexibility to scale up or down instantly.
+
+Secure and compliant for industries like healthcare, finance, and government.
+
+Strong AI and machine learning tools.
+
+Easy integration with existing Microsoft ecosystem.
