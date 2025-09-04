@@ -1,0 +1,41 @@
+Cloud computing is the delivery of computing services over the internet (“the cloud”) instead of relying on local servers or personal computers.
+
+These services include things like:
+
+Servers (virtual machines, computing power)
+
+Storage (databases, file storage, backups)
+
+Networking (load balancing, content delivery)
+
+Software & Applications (SaaS tools like Gmail, Zoom, Office 365)
+
+Analytics & AI services
+
+Key Characteristics of Cloud Computing
+
+On-demand self-service – You can access resources whenever you need them.
+
+Scalability – Scale resources up or down quickly depending on demand.
+
+Pay-as-you-go – You only pay for what you use, no need to buy expensive hardware.
+
+Accessibility – Accessible from anywhere with an internet connection.
+
+Managed infrastructure – The cloud provider takes care of maintenance, security, and updates.
+
+Types of Cloud Computing
+
+Public Cloud – Services offered over the internet by providers like AWS, Azure, Google Cloud.
+
+Private Cloud – Exclusive cloud environment used by one organization.
+
+Hybrid Cloud – A mix of public and private clouds for flexibility.
+
+Service Models
+
+IaaS (Infrastructure as a Service) – Rent virtual servers, storage, networking (e.g., AWS EC2, Google Compute Engine).
+
+PaaS (Platform as a Service) – Provides tools and platforms to build and deploy apps without managing hardware (e.g., Heroku, Google App Engine).
+
+SaaS (Software as a Service) – Ready-to-use applications delivered via the cloud (e.g., Gmail, Dropbox, Salesforce).
