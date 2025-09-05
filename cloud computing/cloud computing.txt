@@ -149,3 +149,154 @@ To enable machine learning and AI on massive datasets.
 To keep historical raw data for future analysis.
 
 To support real-time analytics from streaming sources.
+
+
+Machine Readable Files (MRF) in Healthcare
+1. Theory (2 hours)
+🔹 What is MRF?
+
+Machine Readable Files (MRFs) are JSON / XML / CSV / Parquet-like structured files mandated under CMS (Centers for Medicare & Medicaid Services) Price Transparency Rules.
+
+Purpose → To make pricing information publicly available for patients, regulators, and researchers.
+
+🔹 Components of MRF
+
+Billing Codes
+
+CPT (Current Procedural Terminology)
+
+HCPCS (Healthcare Common Procedure Coding System)
+
+DRG (Diagnosis-Related Group)
+
+NDC (National Drug Code for pharmacy claims)
+
+Service Codes / Descriptions
+
+Identifies the medical service, procedure, or drug.
+
+Negotiated Rates
+
+Rates agreed between providers and payers (hospitals, physicians, pharmacies).
+
+Includes in-network negotiated price + out-of-network allowed amount.
+
+Plan Identifiers
+
+Employer / Insurance plan ID.
+
+Provider Identifiers
+
+NPI, facility code, location.
+
+2. Hands-on SQL / Data Tasks (2 hours)
+
+Let’s imagine you loaded MRF data into SQL tables:
+
+CREATE TABLE mrf_data (
+    plan_id VARCHAR(50),
+    provider_id VARCHAR(50),
+    billing_code VARCHAR(20),
+    service_description VARCHAR(255),
+    negotiated_rate DECIMAL(10,2),
+    billing_class VARCHAR(50),   -- e.g., inpatient, outpatient, pharmacy
+    last_updated DATE
+);
+
+✅ Practice Queries
+
+Find the top 5 most expensive procedures
+
+SELECT billing_code, service_description, MAX(negotiated_rate) AS highest_rate
+FROM mrf_data
+GROUP BY billing_code, service_description
+ORDER BY highest_rate DESC
+LIMIT 5;
+
+
+Compare average rates per provider
+
+SELECT provider_id, AVG(negotiated_rate) AS avg_rate
+FROM mrf_data
+GROUP BY provider_id
+ORDER BY avg_rate DESC;
+
+
+Find services with >3 different negotiated rates (variation across plans)
+
+SELECT billing_code, COUNT(DISTINCT negotiated_rate) AS rate_variations
+FROM mrf_data
+GROUP BY billing_code
+HAVING COUNT(DISTINCT negotiated_rate) > 3;
+
+
+List all procedures with missing negotiated rates
+
+SELECT * 
+FROM mrf_data
+WHERE negotiated_rate IS NULL;
+
+
+Find pharmacy items (NDC codes) with highest average rates
+
+SELECT billing_code, AVG(negotiated_rate) AS avg_ndc_rate
+FROM mrf_data
+WHERE billing_class = 'pharmacy'
+GROUP BY billing_code
+ORDER BY avg_ndc_rate DESC
+LIMIT 10;
+
+3. Practice Questions (1 hour)
+🔹 Knowledge
+
+What is the purpose of MRF in healthcare?
+
+Which billing codes appear in MRF data?
+
+Why are negotiated rates included in MRFs?
+
+How can MRFs help patients and regulators?
+
+🔹 SQL Practice
+
+Write a query to count how many unique billing codes are in your MRF dataset.
+
+Write a query to find which plan has the highest average negotiated rate.
+
+Write a query to detect if any provider has extreme pricing differences (max rate / min rate > 5x).
+
+4. Mini Project (1 hour)
+MRF Transparency Analysis Dashboard (SQL)
+
+Input: mrf_data table (sample JSON/CSV parsed into SQL).
+
+Deliverables:
+
+Expensive Services Report → Top 10 procedures with highest negotiated rates.
+
+Provider Variation Report → Providers whose rates vary significantly (>200% difference).
+
+Pharmacy Transparency Report → Most expensive NDC codes.
+
+Data Quality Check Report → Missing rates, duplicate records.
+
+👉 This becomes a toolkit for regulators to check price transparency compliance.
+
+5. Interview Prep (1 hour)
+🔹 Conceptual Qs
+
+What are MRFs and why did CMS mandate them?
+
+Which key data elements do MRFs contain?
+
+How would you handle very large MRF JSON files in ETL pipelines?
+
+What challenges exist in analyzing MRF data?
+
+🔹 Scenario-Based Qs
+
+A hospital reports a service with multiple negotiated rates. How would you identify if it’s an error or valid variation?
+
+If a pharmacy drug has no negotiated rate in MRF, what could be the reasons?
+
+How would you design a pipeline to process 1 TB of MRF JSON files daily?
